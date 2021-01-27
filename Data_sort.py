@@ -10,11 +10,8 @@ excelfile.drop(excelfile.columns[[0]], axis=1, inplace=True)
 def x_last(x):
     ball = 0
     observacoes = []
-    if x < 2000:
-        ex = excelfile.iloc[:, -x:]
-    else:
-        ex = excelfile
 
+    ex = excelfile.iloc[:, -x:]
     for row, rs in ex.iterrows():
         ball += 1
         linha = [element for element in rs if not pd.isnull(element) and not element == '']
@@ -23,7 +20,7 @@ def x_last(x):
 
 
 obs = dict()
-obs['All long'] = x_last(2115)
+obs['All long'] = x_last(len(excelfile.columns))
 obs['Last 200'] = x_last(200)
 obs['Last 100'] = x_last(100)
 obs['Last 50'] = x_last(50)
