@@ -21,8 +21,8 @@ def last_x(x):
 
 all_long = len(excelfile.columns)
 obs = dict()
-obs['Seen_value'] = last_x(all_long)
-obs['Expected_value'] = (all_long * 15/25)
+obs['Obs_value'] = last_x(all_long)
+obs['Exp_value'] = (all_long * 15/25)
 
 excelfile.to_excel(file)
 
