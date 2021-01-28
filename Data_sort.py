@@ -15,7 +15,7 @@ def x_last(x):
     for row, rs in ex.iterrows():
         ball += 1
         linha = [element for element in rs if not pd.isnull(element) and not element == '']
-        observacoes.append(int(sum(linha) / ball))
+        observacoes.append(f"{int(sum(linha) / ball)} ({int(x*15/25)})")
     return observacoes
 
 
