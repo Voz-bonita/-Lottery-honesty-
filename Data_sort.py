@@ -7,7 +7,7 @@ excelfile = pd.read_excel(file, sheet_name='Sheet1', engine='openpyxl')
 excelfile.drop(excelfile.columns[[0]], axis=1, inplace=True)
 
 
-def x_last(x):
+def last_x(x):
     ball = 0
     observacoes = []
 
@@ -15,15 +15,14 @@ def x_last(x):
     for row, rs in ex.iterrows():
         ball += 1
         linha = [element for element in rs if not pd.isnull(element) and not element == '']
-        observacoes.append(f"{int(sum(linha) / ball)} ({int(x*15/25)})")
+        observacoes.append(int(sum(linha) / ball))
     return observacoes
 
 
+all_long = len(excelfile.columns)
 obs = dict()
-obs['All long'] = x_last(len(excelfile.columns))
-obs['Last 200'] = x_last(200)
-obs['Last 100'] = x_last(100)
-obs['Last 50'] = x_last(50)
+obs['Seen_value'] = last_x(all_long)
+obs['Expected_value'] = (all_long * 15/25)
 
 excelfile.to_excel(file)
 
