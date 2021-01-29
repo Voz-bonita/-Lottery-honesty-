@@ -41,10 +41,10 @@ so the expected value of a number being observed out of 2125 contest (number of 
 
 ### Step 2:
 
-The test statistic is ![Statistic](https://latex.codecogs.com/svg.latex?\chi^2(v)), 
+The test statistic is ![Statistic](https://latex.codecogs.com/svg.latex?\chi^{2}(v)), 
 where ![V](https://latex.codecogs.com/svg.latex?v) are degrees of freedom given by ![Degree](https://latex.codecogs.com/svg.latex?(r-1))
 where ![r](https://latex.codecogs.com/svg.latex?r) is the dimensions of the table `Lotofac_hist.xlsx` (only the Obs_value column), 
-i.e. ![Real_r](https://latex.codecogs.com/svg.latex?r=25\Rightarrowv=24)
+i.e. ![Real_r](https://latex.codecogs.com/svg.latex?r=25{\Rightarrow}v=24)
 
 ### Step 3:
 
@@ -55,10 +55,10 @@ we got ![Statistic](https://latex.codecogs.com/svg.latex?\chi^2(24)=36.41503)
 
 The observed value for the statistic is 
 
-![Statistic](https://latex.codecogs.com/svg.latex?\chi^2=13.55765) 
+![Statistic](https://latex.codecogs.com/svg.latex?\chi^{2}=13.55765) 
 
 ### Step 5:
 
 As the observed value for ![Statistic](https://latex.codecogs.com/svg.latex?\chi^2) 
 was lower than the critical value, obtained at **Step 3**, we should accept (not reject) the null hypothesis.
-The p-value of the test is ![Statistic](https://latex.codecogs.com/svg.latex?p-value=0.9560187) which tells us the same thing. 
+The p-value of the test is ![Statistic](https://latex.codecogs.com/svg.latex?p.value=0.9560187) which tells us the same thing. 
