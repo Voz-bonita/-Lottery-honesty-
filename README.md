@@ -31,7 +31,7 @@ i.e.
 
 ![Null hypothesis](https://latex.codecogs.com/svg.latex?{\color{blue}H_0:p_1=p_2=p_3=\ldots=p_{25}=\frac{15}{25}})
 
-![Alternative hypothesis](https://latex.codecogs.com/svg.latex?{\color{blue}H_1:p_j\neq\frac{15}{25}})
+![Alternative hypothesis](https://latex.codecogs.com/svg.latex?{\color{blue}H_1:p_j{\neq}{\frac{15}{25}}})
 
 ### Step 1.1:
 
@@ -42,14 +42,14 @@ so the expected value of a number being observed out of 2125 contest (number of 
 ### Step 2:
 
 The test statistic is ![Statistic](https://latex.codecogs.com/svg.latex?{\color{blue}\chi^{2}(v)}), 
-where ![V](https://latex.codecogs.com/svg.latex?{\color{blue}v}) are degrees of freedom given by ![Degree](https://latex.codecogs.com/svg.latex?{\color{blue}(r-1)})
+where ![V](https://latex.codecogs.com/svg.latex?{\color{blue}v}) are degrees of freedom given by ![Degree](https://latex.codecogs.com/svg.latex?{\color{blue}{(r-1)}})
 where ![r](https://latex.codecogs.com/svg.latex?{\color{blue}r}) is the dimensions of the table `Lotofac_hist.xlsx` (only the Obs_value column), 
 i.e. ![Real_r](https://latex.codecogs.com/svg.latex?{\color{blue}r=25{\Rightarrow}v=24})
 
 ### Step 3:
 
 Assuming ![Epsilon](https://latex.codecogs.com/svg.latex?{\color{blue}\alpha=0.05}) (probabiility of guessing the system is fair when it actually isn't)
-we got ![Statistic](https://latex.codecogs.com/svg.latex?{\color{blue}\chi^2(24)=36.41503})
+we got ![Statistic](https://latex.codecogs.com/svg.latex?{\color{blue}\chi^{2}(24)=36.41503})
 
 ### Step 4:
 
