@@ -31,7 +31,7 @@ i.e.
 
 ![Null hypothesis](https://latex.codecogs.com/svg.latex?{\color{blue}H_0:p_1=p_2=p_3=\ldots=p_{25}=\frac{15}{25}})
 
-![Alternative hypothesis](https://latex.codecogs.com/svg.latex?{\color{blue}{H_1:p_j}\neq{\frac{15}{25}}})
+![Alternative hypothesis](https://latex.codecogs.com/svg.latex?{\color{blue}{H_1:p_j}\neq{\frac{15}{25}}~~\text{for}~\text{at}~\text{least}~\text{one}~j})
 
 ### Step 1.1:
 
@@ -55,7 +55,7 @@ we got ![Statistic](https://latex.codecogs.com/svg.latex?{\color{blue}\chi^{2}(2
 
 The observed value for the statistic is 
 
-![Statistic](https://latex.codecogs.com/svg.latex?{\color{blue}\{chi^2}=13.55765}) 
+![Statistic](https://latex.codecogs.com/svg.latex?{\color{blue}{\chi^2}=13.55765}) 
 
 ### Step 5:
 
